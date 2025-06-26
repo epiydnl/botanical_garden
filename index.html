@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botanical Garden Labuan | Nature's Paradise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar fixed top-0 left-0 w-full z-50 bg-transparent">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">
+                <span class="lang-en">Labuan Botanical Garden</span>
+                <span class="lang-ms hidden">Taman Botani Labuan</span>
+            </a>
+            
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Home</span>
+                    <span class="lang-ms hidden">Utama</span>
+                </a>
+                <a href="#about" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">About</span>
+                    <span class="lang-ms hidden">Tentang</span>
+                </a>
+                <a href="#attractions" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Attractions</span>
+                    <span class="lang-ms hidden">Tarikan</span>
+                </a>
+                <a href="#plants" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Plants</span>
+                    <span class="lang-ms hidden">Tumbuhan</span>
+                </a>
+                <a href="#events" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Events</span>
+                    <span class="lang-ms hidden">Acara</span>
+                </a>
+                <a href="#gallery" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Gallery</span>
+                    <span class="lang-ms hidden">Galeri</span>
+                </a>
+                <a href="#contact" class="text-white hover:text-yellow-300 transition">
+                    <span class="lang-en">Contact</span>
+                    <span class="lang-ms hidden">Hubungi</span>
+                </a>
+                <!-- Language Dropdown -->
+                <select id="language-select" class="bg-green-700 text-white rounded px-2 py-1 ml-4 cursor-pointer">
+                    <option value="en" selected>English</option>
+                    <option value="ms">Bahasa Melayu</option>
+                </select>
+            </div>
+            
+            <button class="hamburger md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <div class="navbar-menu">
+            <div class="container mx-auto px-4 py-8 flex flex-col">
+                <a href="#home" class="text-white py-3 text-xl">Home</a>
+                <a href="#about" class="text-white py-3 text-xl">About</a>
+                <a href="#attractions" class="text-white py-3 text-xl">Attractions</a>
+                <a href="#plants" class="text-white py-3 text-xl">Plants</a>
+                <a href="#events" class="text-white py-3 text-xl">Events</a>
+                <a href="#gallery" class="text-white py-3 text-xl">Gallery</a>
+                <a href="#contact" class="text-white py-3 text-xl">Contact</a>
+                <!-- Language Dropdown for mobile -->
+                <select id="language-select-mobile" class="bg-green-700 text-white rounded px-2 py-1 mt-4 cursor-pointer">
+                    <option value="en" selected>English</option>
+                    <option value="ms">Bahasa Melayu</option>
+                </select>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero text-center relative">
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden pointer-events-none" id="leaf-container"></div>
+        
+        <div class="container mx-auto px-4 text-white z-10">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-bounce">
+                <span class="lang-en">Labuan Botanical Garden</span>
+                <span class="lang-ms hidden">Taman Botani Labuan</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8">
+                <span class="lang-en">Discover the Tropical Paradise of Labuan - Free Admission!</span>
+                <span class="lang-ms hidden">Temui Syurga Tropika Labuan - Masuk Percuma!</span>
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#about" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    <span class="lang-en">Explore Now</span>
+                    <span class="lang-ms hidden">Terokai Sekarang</span>
+                </a>
+                <a href="#events" class="border-2 border-white hover:bg-white hover:bg-opacity-20 text-white font-bold py-3 px-6 rounded-full transition duration-300 transform hover:scale-105">
+                    <span class="lang-en">Upcoming Events</span>
+                    <span class="lang-ms hidden">Acara Akan Datang</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">About Us</span>
+                <span class="lang-ms hidden">Tentang Kami</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="flex flex-col md:flex-row items-center gap-8 mt-12">
+                <div class="md:w-1/2">
+                    <img src="photo/main_entrance/IMG_5599.JPG" 
+                         alt="Botanical Garden Labuan" class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        <span class="lang-en">Established in 1980, the Botanical Garden Labuan spans over 50 hectares of lush tropical landscape. 
+                        We are dedicated to the conservation, research, and display of a wide range of tropical plants and 
+                        ecosystems native to Malaysia and beyond.</span>
+                        <span class="lang-ms hidden">Ditubuhkan pada tahun 1980, Taman Botani Labuan merangkumi lebih daripada 50 hektar landskap tropika yang subur. Kami berdedikasi untuk pemuliharaan, penyelidikan, dan pameran pelbagai tumbuhan tropika dan ekosistem yang berasal dari Malaysia dan sekitarnya.</span>
+                    </p>
+                    
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        <span class="lang-en">Our garden is not just a sanctuary for plants but also a haven for visitors seeking tranquility 
+                        and connection with nature. With themed gardens, walking trails, and educational programs, we offer 
+                        an immersive experience for all ages.</span>
+                        <span class="lang-ms hidden">Taman kami bukan sahaja tempat perlindungan untuk tumbuhan tetapi juga tempat perlindungan bagi pengunjung yang mencari ketenangan dan hubungan dengan alam semula jadi. Dengan taman bertema, laluan berjalan kaki, dan program pendidikan, kami menawarkan pengalaman yang mendalam untuk semua peringkat umur.</span>
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <i class="fas fa-leaf text-4xl text-green-600 mb-2"></i>
+                            <h3 class="font-bold text-green-700">500+</h3>
+                            <p class="text-gray-600">
+                                <span class="lang-en">Plant Species</span>
+                                <span class="lang-ms hidden">Spesies Tumbuhan</span>
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <i class="fas fa-tree text-4xl text-green-600 mb-2"></i>
+                            <h3 class="font-bold text-green-700">50</h3>
+                            <p class="text-gray-600">
+                                <span class="lang-en">Hectares</span>
+                                <span class="lang-ms hidden">Hektar</span>
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <i class="fas fa-wheelchair text-4xl text-green-600 mb-2"></i>
+                            <h3 class="font-bold text-green-700">100%</h3>
+                            <p class="text-gray-600">
+                                <span class="lang-en">Accessible</span>
+                                <span class="lang-ms hidden">Boleh Diakses</span>
+                            </p>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <i class="fas fa-child text-4xl text-green-600 mb-2"></i>
+                            <h3 class="font-bold text-green-700">Family</h3>
+                            <p class="text-gray-600">
+                                <span class="lang-en">Friendly</span>
+                                <span class="lang-ms hidden">Mesra Keluarga</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="attractions" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">Our Attractions</span>
+                <span class="lang-ms hidden">Tarikan Kami</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <!-- Orchid Pavilion -->
+                <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="photo/orchid/IMG_5639.JPG" 
+                             alt="Orchid Pavilion" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Orchid Pavilion</span>
+                            <span class="lang-ms hidden">Paviliun Orkid</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">Home to over 200 species of orchids, including rare and endemic varieties from across Southeast Asia.</span>
+                            <span class="lang-ms hidden">Rumah bagi lebih 200 spesies orkid, termasuk varieti jarang dan endemik dari seluruh Asia Tenggara.</span>
+                        </p>
+                        <div class="flex items-center text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span class="ml-2 text-gray-600">4.8 (256)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Canopy Walk -->
+                <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="photo/main_plaza/IMG_5665.JPG" 
+                             alt="Canopy Walk" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Main Plaza</span>
+                            <span class="lang-ms hidden">Plaza Utama</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">A central gathering place featuring beautiful landscaping, fountains, and open spaces for events and relaxation.</span>
+                            <span class="lang-ms hidden">Tempat berkumpul utama yang menampilkan landskap indah, air pancut, dan ruang terbuka untuk acara dan bersantai.</span>
+                        </p>
+                        <div class="flex items-center text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="ml-2 text-gray-600">5.0 (187)</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Butterfly Garden -->
+                <div class="attraction-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="photo/plantar_memancing/IMG_5677.JPG" 
+                             alt="Plantar Memancing" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Plantar Memancing</span>
+                            <span class="lang-ms hidden">Kolam Memancing</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">A serene fishing pond area where visitors can enjoy peaceful angling surrounded by lush greenery.</span>
+                            <span class="lang-ms hidden">Sebuah kawasan kolam memancing yang tenang di mana pengunjung dapat menikmati memancing dengan suasana hijau yang subur.</span>
+                        </p>
+                        <div class="flex items-center text-yellow-500">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span class="ml-2 text-gray-600">4.9 (203)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Plants Section -->
+    <section id="plants" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">Featured Plants</span>
+                <span class="lang-ms hidden">Tumbuhan Pilihan</span>
+            </h2>
+            <div class="section-divider"></div>
+            <p class="text-center text-gray-600 max-w-2xl mx-auto mb-12">
+                <span class="lang-en">Discover some of our most remarkable plant species and learn about their unique characteristics and ecological importance.</span>
+                <span class="lang-ms hidden">Temui beberapa spesies tumbuhan kami yang paling luar biasa dan pelajari tentang ciri-ciri unik dan kepentingan ekologi mereka.</span>
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Rafflesia -->
+                <div class="plant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://cdn.shortpixel.ai/spai2/q_glossy+w_1082+to_auto+ret_img/www.fauna-flora.org/wp-content/uploads/2023/06/our-green-planet-resplendent-rafflesia-reigns-supreme-scaled.jpg" 
+                             alt="Rafflesia" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Rafflesia</span>
+                            <span class="lang-ms hidden">Rafflesia</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">Rafflesia is the world's largest flower, found in the rainforests of Southeast Asia including Malaysia. It is a rare and endangered species known for its distinctive odor.</span>
+                            <span class="lang-ms hidden">Rafflesia adalah bunga terbesar di dunia, ditemui di hutan hujan Asia Tenggara termasuk Malaysia. Ia adalah spesies yang jarang dan terancam dengan bau yang khas.</span>
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-info-circle mr-1"></i> 
+                                <span class="lang-en">Endangered Species</span>
+                                <span class="lang-ms hidden">Spesies Terancam</span>
+                            </span>
+                            <button class="text-green-600 hover:text-green-800 text-sm font-semibold" onclick="window.open('https://en.wikipedia.org/wiki/Rafflesia', '_blank')">
+                                <span class="lang-en">Learn More</span>
+                                <span class="lang-ms hidden">Ketahui Lebih Lanjut</span> <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Pitcher Plant -->
+                <div class="plant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://botanix.com/cdn/shop/files/Sarracenia-Trumpette_95962bc4-e525-4120-a92e-5a3a7e503a13.jpg?v=1711913361" 
+                             alt="Pitcher Plant" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Pitcher Plant</span>
+                            <span class="lang-ms hidden">Pokok Pitcher</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">Pitcher plants are carnivorous plants native to Malaysia, including Labuan Botanical Garden. They trap insects in their pitcher-shaped leaves for nutrition.</span>
+                            <span class="lang-ms hidden">Pokok pitcher adalah tumbuhan karnivor yang berasal dari Malaysia, termasuk Taman Botani Labuan. Mereka menjebak serangga dalam daun berbentuk pitcher untuk nutrisi.</span>
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-info-circle mr-1"></i> 
+                                <span class="lang-en">Carnivorous</span>
+                                <span class="lang-ms hidden">Karnivor</span>
+                            </span>
+                            <button class="text-green-600 hover:text-green-800 text-sm font-semibold" onclick="window.open('https://en.wikipedia.org/wiki/Nepenthes_rafflesiana', '_blank')">
+                                <span class="lang-en">Learn More</span>
+                                <span class="lang-ms hidden">Ketahui Lebih Lanjut</span> <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Slipper Orchid -->
+                <div class="plant-card bg-white rounded-lg shadow-lg overflow-hidden">
+                    <div class="relative h-48 overflow-hidden">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOzNbCmxsHiyxbhvUpQT-uEBaA2YcmOZEhDg&s" 
+                             alt="Slipper Orchid" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-700 mb-2">
+                            <span class="lang-en">Slipper Orchid</span>
+                            <span class="lang-ms hidden">Orkid Selipar</span>
+                        </h3>
+                        <p class="text-gray-600 mb-4">
+                            <span class="lang-en">Slipper orchids are rare orchids found in tropical Asia, including Malaysia. They have unique pouch-like lips that trap insects for pollination.</span>
+                            <span class="lang-ms hidden">Orkid selipar adalah orkid jarang yang ditemui di Asia tropika, termasuk Malaysia. Mereka mempunyai bibir berbentuk kantung yang unik untuk menjebak serangga bagi penyerbukan.</span>
+                        </p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500"><i class="fas fa-info-circle mr-1"></i> 
+                                <span class="lang-en">Rare Species</span>
+                                <span class="lang-ms hidden">Spesies Jarang</span>
+                            </span>
+                            <button class="text-green-600 hover:text-green-800 text-sm font-semibold" onclick="window.open('https://en.wikipedia.org/wiki/Paphiopedilum_rothschildianum', '_blank')">
+                                <span class="lang-en">Learn More</span>
+                                <span class="lang-ms hidden">Ketahui Lebih Lanjut</span> <i class="fas fa-arrow-right ml-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition">
+                    <span class="lang-en">View All Plants</span>
+                    <span class="lang-ms hidden">Lihat Semua Tumbuhan</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">Events & Activities</span>
+                <span class="lang-ms hidden">Acara & Aktiviti</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="mt-12">
+                <h3 class="text-2xl font-bold text-center text-green-700 mb-8">
+                    <span class="lang-en">Monthly Calendar</span>
+                    <span class="lang-ms hidden">Kalendar Bulanan</span>
+                </h3>
+                
+                <div class="bg-white rounded-lg shadow-lg p-6 mb-12">
+                    <div class="flex justify-between items-center mb-6">
+                        <button class="text-green-600 hover:text-green-800 text-xl">
+                            <i class="fas fa-chevron-left"></i>
+                        </button>
+                        <h4 class="text-xl font-bold text-green-800">
+                            <span class="lang-en">August 2025</span>
+                            <span class="lang-ms hidden">Ogos 2025</span>
+                        </h4>
+                        <button class="text-green-600 hover:text-green-800 text-xl">
+                            <i class="fas fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="grid grid-cols-7 gap-2 text-center mb-4">
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Sun</span>
+                            <span class="lang-ms hidden">Ahad</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Mon</span>
+                            <span class="lang-ms hidden">Isnin</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Tue</span>
+                            <span class="lang-ms hidden">Selasa</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Wed</span>
+                            <span class="lang-ms hidden">Rabu</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Thu</span>
+                            <span class="lang-ms hidden">Khamis</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Fri</span>
+                            <span class="lang-ms hidden">Jumaat</span>
+                        </div>
+                        <div class="font-bold text-green-700">
+                            <span class="lang-en">Sat</span>
+                            <span class="lang-ms hidden">Sabtu</span>
+                        </div>
+                    </div>
+                    
+                    <div class="grid grid-cols-7 gap-2">
+                        <div class="calendar-day py-2 text-gray-400">30</div>
+                        <div class="calendar-day py-2">31</div>
+                        <div class="calendar-day py-2">1</div>
+                        <div class="calendar-day py-2">2</div>
+                        <div class="calendar-day py-2">3</div>
+                        <div class="calendar-day py-2">4</div>
+                        <div class="calendar-day py-2">5</div>
+                        
+                        <div class="calendar-day py-2">6</div>
+                        <div class="calendar-day py-2">7</div>
+                        <div class="calendar-day py-2">8</div>
+                        <div class="calendar-day py-2">9</div>
+                        <div class="calendar-day py-2">10</div>
+                        <div class="calendar-day py-2">11</div>
+                        <div class="calendar-day py-2">12</div>
+                        
+                        <div class="calendar-day py-2">13</div>
+                        <div class="calendar-day py-2">14</div>
+                        <div class="calendar-day has-event py-2 font-bold text-green-700 relative">
+                            15
+                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 rounded-full"></div>
+                        </div>
+                        <div class="calendar-day py-2">16</div>
+                        <div class="calendar-day py-2">17</div>
+                        <div class="calendar-day py-2">18</div>
+                        <div class="calendar-day py-2">19</div>
+                        
+                        <div class="calendar-day py-2">20</div>
+                        <div class="calendar-day py-2">21</div>
+                        <div class="calendar-day has-event py-2 font-bold text-green-700 relative">
+                            22
+                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 rounded-full"></div>
+                        </div>
+                        <div class="calendar-day py-2">23</div>
+                        <div class="calendar-day py-2">24</div>
+                        <div class="calendar-day py-2">25</div>
+                        <div class="calendar-day py-2">26</div>
+                        
+                        <div class="calendar-day py-2">27</div>
+                        <div class="calendar-day py-2">28</div>
+                        <div class="calendar-day py-2">29</div>
+                        <div class="calendar-day py-2">30</div>
+                        <div class="calendar-day has-event py-2 font-bold text-green-700 relative">
+                            31
+                            <div class="absolute bottom-0 left-0 right-0 h-1 bg-yellow-500 rounded-full"></div>
+                        </div>
+                        <div class="calendar-day py-2 text-gray-400">1</div>
+                        <div class="calendar-day py-2 text-gray-400">2</div>
+                    </div>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-green-700 text-white p-4 text-center">
+                            <div class="text-3xl font-bold">15</div>
+                            <div class="text-xl">August</div>
+                            <div class="text-sm">2025</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-700 mb-2">
+                                <span class="lang-en">Botanical Photography Workshop</span>
+                                <span class="lang-ms hidden">Bengkel Fotografi Botani</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Learn from professional photographers how to capture the beauty of plants and flowers. All skill levels welcome!</span>
+                                <span class="lang-ms hidden">Belajar dari jurugambar profesional cara menangkap keindahan tumbuhan dan bunga. Semua tahap kemahiran dialu-alukan!</span>
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500"><i class="fas fa-clock mr-1"></i> 9:00 AM - 12:00 PM</span>
+                                <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm transition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-green-700 text-white p-4 text-center">
+                            <div class="text-3xl font-bold">22</div>
+                            <div class="text-xl">August</div>
+                            <div class="text-sm">2025</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-700 mb-2">
+                                <span class="lang-en">Children's Nature Discovery Day</span>
+                                <span class="lang-ms hidden">Hari Penemuan Alam Kanak-kanak</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Special activities for kids including scavenger hunts, plant potting workshops, and insect discovery sessions.</span>
+                                <span class="lang-ms hidden">Aktiviti khas untuk kanak-kanak termasuk pencarian harta karun, bengkel menanam tumbuhan, dan sesi penemuan serangga.</span>
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500"><i class="fas fa-clock mr-1"></i> 8:00 AM - 4:00 PM</span>
+                                <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm transition" onclick="alert('Special activities for kids including scavenger hunts, plant potting workshops, and insect discovery sessions.')">
+                                    Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="bg-green-700 text-white p-4 text-center">
+                            <div class="text-3xl font-bold">5</div>
+                            <div class="text-xl">September</div>
+                            <div class="text-sm">2025</div>
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-green-700 mb-2">
+                                <span class="lang-en">Moonlight Garden Walk</span>
+                                <span class="lang-ms hidden">Jalan Taman Cahaya Bulan</span>
+                            </h3>
+                            <p class="text-gray-600 mb-4">
+                                <span class="lang-en">Experience the garden in a different light with our special evening opening. See nocturnal plants in bloom.</span>
+                                <span class="lang-ms hidden">Alami taman dalam cahaya yang berbeza dengan pembukaan malam khas kami. Lihat tumbuhan nokturnal yang mekar.</span>
+                            </p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-gray-500"><i class="fas fa-clock mr-1"></i> 7:00 PM - 10:00 PM</span>
+                                <button class="bg-green-600 hover:bg-green-700 text-white py-1 px-3 rounded text-sm transition">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition">
+                    View All Events
+                </button>
+            </div>
+        </div>
+    </section>
+
+   <!-- Gallery Section -->
+<section id="gallery" class="py-20 bg-gray-100">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+<span class="lang-en">Photo Gallery</span>
+<span class="lang-ms hidden">Galeri Foto</span>
+</h2>
+<div class="section-divider"></div>
+
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mt-12">
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_plaza/IMG_5665.JPG" alt="Main Plaza">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Main Plaza</span>
+<span class="lang-ms hidden">Plaza Utama</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">A central gathering place featuring beautiful landscaping, fountains, and open spaces for events and relaxation.</span>
+<span class="lang-ms hidden">Tempat berkumpul utama yang menampilkan landskap indah, air pancut, dan ruang terbuka untuk acara dan bersantai.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/plantar_memancing/IMG_5677.JPG" alt="Fishing Pond">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Fishing Pond</span>
+<span class="lang-ms hidden">Kolam Memancing</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">A serene fishing pond area where visitors can enjoy peaceful angling surrounded by lush greenery.</span>
+<span class="lang-ms hidden">Sebuah kawasan kolam memancing yang tenang di mana pengunjung dapat menikmati memancing dengan suasana hijau yang subur.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_entrance/IMG_5599.JPG" alt="Main Entrance 1">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Main Entrance 1</span>
+<span class="lang-ms hidden">Pintu Masuk Utama 1</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">The main entrance of the Botanical Garden Labuan, welcoming visitors with lush greenery.</span>
+<span class="lang-ms hidden">Pintu masuk utama Taman Botani Labuan, menyambut pengunjung dengan kehijauan yang subur.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_entrance/IMG_5601.JPG" alt="Main Entrance 2">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Main Entrance 2</span>
+<span class="lang-ms hidden">Pintu Masuk Utama 2</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">Visitors enjoying the lush surroundings at the main entrance.</span>
+<span class="lang-ms hidden">Pengunjung menikmati kehijauan di pintu masuk utama.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_entrance/IMG_5604.JPG" alt="Main Entrance 3">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Main Entrance 3</span>
+<span class="lang-ms hidden">Pintu Masuk Utama 3</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">Visitors walking along the main entrance pathway.</span>
+<span class="lang-ms hidden">Pengunjung berjalan di sepanjang laluan pintu masuk utama.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_entrance/IMG_5605.JPG" alt="Main Entrance 4">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Main Entrance 4</span>
+<span class="lang-ms hidden">Pintu Masuk Utama 4</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">A peaceful garden area near the main entrance.</span>
+<span class="lang-ms hidden">Kawasan taman yang tenang berhampiran pintu masuk utama.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/main_entrance/IMG_5606.JPG" alt="Garden Map">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Garden Map</span>
+<span class="lang-ms hidden">Peta Taman</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">Legend: Public Toilet, Gazebo, Pond, Reflexology Path, Bridge, Narrow Boardwalk, Walkways, Service Road.</span>
+<span class="lang-ms hidden">Petunjuk: Tandas Awam, Wakaf, Kolam, Laluan Refleksologi, Jambatan, Titian, Siarkaki, Jalan Servis.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/orchid/IMG_5639.JPG" alt="Orchid 1">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Orchid 1</span>
+<span class="lang-ms hidden">Orkid 1</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">A beautiful orchid species found in the garden.</span>
+<span class="lang-ms hidden">Spesies orkid yang indah ditemui di taman.</span>
+</p>
+</div>
+</div>
+
+<div class="gallery-item rounded-lg overflow-hidden relative">
+<img src="photo/orchid/IMG_5644.JPG" alt="Orchid 2">
+<div class="gallery-overlay">
+<h3 class="font-bold text-lg">
+<span class="lang-en">Orchid 2</span>
+<span class="lang-ms hidden">Orkid 2</span>
+</h3>
+<p class="text-sm">
+<span class="lang-en">A rare and beautiful orchid species.</span>
+<span class="lang-ms hidden">Spesies orkid yang jarang dan indah.</span>
+</p>
+</div>
+</div>
+</div>
+
+<div class="text-center mt-10">
+<button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition">
+<span class="lang-en">View More Photos</span>
+<span class="lang-ms hidden">Lihat Lebih Banyak Foto</span>
+</button>
+</div>
+</div>
+</section>
+
+    <!-- Garden Map Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">Garden Map</h2>
+            <div class="section-divider"></div>
+            
+            <div class="mt-12">
+                <div class="bg-white rounded-xl shadow-xl overflow-hidden">
+                    <img src="photo/main_entrance/IMG_5606.JPG" 
+                         alt="Botanical Garden Map" class="w-full h-auto">
+                </div>
+                
+                    
+                    <div class="text-center mt-10">
+                        <a href="photo/main_entrance/IMG_5606.pdf" download class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-full transition inline-block">
+                            Download Full Map (PDF)
+                        </a>
+                    </div>
+                </div>
+            
+             <div class="text-center mt-10">
+                 <!-- Removed duplicate Download Full Map button -->
+             </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="py-20 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">Visitor Reviews</span>
+                <span class="lang-ms hidden">Ulasan Pelawat</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+                <div class="review-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Visitor" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Sarah Lim</h4>
+                            <div class="flex text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        <span class="lang-en">"Absolutely breathtaking! The orchid collection is world-class. My kids loved the butterfly garden. The garden is very wheelchair-friendly too."</span>
+                        <span class="lang-ms hidden">"Sangat menakjubkan! Koleksi orkid adalah bertaraf dunia. Anak-anak saya sangat menyukai taman rama-rama. Taman ini sangat mesra kerusi roda juga."</span>
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i> <span class="lang-en">Visited on 15 July 2023</span><span class="lang-ms hidden">Dikunjungi pada 15 Julai 2023</span>
+                    </div>
+                </div>
+                
+                <div class="review-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Visitor" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Mohammad Ali</h4>
+                            <div class="flex text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        <span class="lang-en">"The canopy walk was the highlight of our visit. Educational signs throughout make it great for learning. Clean facilities and helpful staff."</span>
+                        <span class="lang-ms hidden">"Jalan kanopi adalah sorotan lawatan kami. Tanda pendidikan di seluruh membuatnya hebat untuk pembelajaran. Kemudahan bersih dan kakitangan yang membantu."</span>
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i> <span class="lang-en">Visited on 2 June 2023</span><span class="lang-ms hidden">Dikunjungi pada 2 Jun 2023</span>
+                    </div>
+                </div>
+                
+                <div class="review-card bg-white rounded-lg shadow-lg p-6">
+                    <div class="flex items-center mb-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-300 mr-4 overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Visitor" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Emily Wong</h4>
+                            <div class="flex text-yellow-500 text-sm">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">
+                        <span class="lang-en">"Perfect for families! The children's discovery trail kept my 5-year-old engaged for hours. Free admission makes it accessible to everyone."</span>
+                        <span class="lang-ms hidden">"Sesuai untuk keluarga! Laluan penemuan kanak-kanak membuatkan anak saya yang berumur 5 tahun terlibat selama berjam-jam. Kemasukan percuma menjadikannya boleh diakses oleh semua orang."</span>
+                    </p>
+                    <div class="mt-4 text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-1"></i> <span class="lang-en">Visited on 22 May 2023</span><span class="lang-ms hidden">Dikunjungi pada 22 Mei 2023</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-10">
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition">
+                    <span class="lang-en">Leave Your Review</span>
+                    <span class="lang-ms hidden">Tinggalkan Ulasan Anda</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessibility Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center text-green-800 mb-4">
+                <span class="lang-en">Accessibility Information</span>
+                <span class="lang-ms hidden">Maklumat Aksesibiliti</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
+                <div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">
+                        <span class="lang-en">Facilities</span>
+                        <span class="lang-ms hidden">Kemudahan</span>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-wheelchair text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Wheelchair Access</span>
+                                    <span class="lang-ms hidden">Akses Kerusi Roda</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">All main paths are wheelchair accessible with gentle slopes. Wheelchairs available for loan at visitor center.</span>
+                                    <span class="lang-ms hidden">Semua laluan utama boleh diakses dengan kerusi roda dengan cerun yang lembut. Kerusi roda tersedia untuk dipinjam di pusat pelawat.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-baby text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Family Facilities</span>
+                                    <span class="lang-ms hidden">Kemudahan Keluarga</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">Baby changing rooms, stroller-friendly paths, and children's play areas available throughout the garden.</span>
+                                    <span class="lang-ms hidden">Bilik menukar bayi, laluan mesra kereta sorong, dan kawasan permainan kanak-kanak tersedia di seluruh taman.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-restroom text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Restrooms</span>
+                                    <span class="lang-ms hidden">Tandas</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">Accessible restrooms located at visitor center, orchid pavilion, and near the canopy walk entrance.</span>
+                                    <span class="lang-ms hidden">Tandas yang boleh diakses terletak di pusat pelawat, paviliun orkid, dan berhampiran pintu masuk jalan kanopi.</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold text-green-700 mb-4">
+                        <span class="lang-en">Services</span>
+                        <span class="lang-ms hidden">Perkhidmatan</span>
+                    </h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <i class="fas fa-sign-language text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Special Needs</span>
+                                    <span class="lang-ms hidden">Keperluan Khas</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">Guided tours for visually impaired visitors available upon request. Braille guidebooks at visitor center.</span>
+                                    <span class="lang-ms hidden">Lawatan berpandu untuk pengunjung kurang upaya penglihatan tersedia atas permintaan. Buku panduan Braille di pusat pelawat.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-parking text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Parking</span>
+                                    <span class="lang-ms hidden">Tempat Letak Kereta</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">Designated accessible parking spaces near main entrance. Drop-off area available.</span>
+                                    <span class="lang-ms hidden">Tempat letak kereta yang boleh diakses ditetapkan berhampiran pintu masuk utama. Kawasan menurunkan penumpang tersedia.</span>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-utensils text-2xl text-green-600 mr-4 mt-1"></i>
+                            <div>
+                                <h4 class="font-bold text-lg">
+                                    <span class="lang-en">Dining</span>
+                                    <span class="lang-ms hidden">Tempat Makan</span>
+                                </h4>
+                                <p class="text-gray-600">
+                                    <span class="lang-en">Café with accessible seating and menu options for various dietary requirements.</span>
+                                    <span class="lang-ms hidden">Kafe dengan tempat duduk yang boleh diakses dan pilihan menu untuk pelbagai keperluan diet.</span>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mt-12 bg-green-50 rounded-lg p-6">
+                <h3 class="text-xl font-bold text-green-700 mb-4">
+                    <span class="lang-en">Need Special Assistance?</span>
+                    <span class="lang-ms hidden">Perlukan Bantuan Khas?</span>
+                </h3>
+                <p class="text-gray-700 mb-4">
+                    <span class="lang-en">Contact us in advance to arrange any special requirements for your visit. Our staff are trained to assist visitors with diverse needs.</span>
+                    <span class="lang-ms hidden">Hubungi kami terlebih dahulu untuk mengatur sebarang keperluan khas untuk lawatan anda. Kakitangan kami dilatih untuk membantu pelawat dengan pelbagai keperluan.</span>
+                </p>
+                <button class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-full transition">
+                    <span class="lang-en">Contact Accessibility Team</span>
+                    <span class="lang-ms hidden">Hubungi Pasukan Aksesibiliti</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-green-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">
+                <span class="lang-en">Plan Your Visit</span>
+                <span class="lang-ms hidden">Rancang Lawatan Anda</span>
+            </h2>
+            <div class="section-divider"></div>
+            
+            <div class="flex flex-col md:flex-row gap-12 mt-12">
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="lang-en">Opening Hours</span>
+                        <span class="lang-ms hidden">Waktu Operasi</span>
+                    </h3>
+                    <ul class="space-y-3">
+                        <li class="flex justify-between border-b border-green-600 pb-2">
+                            <span>
+                                <span class="lang-en">Monday - Friday</span>
+                                <span class="lang-ms hidden">Isnin - Jumaat</span>
+                            </span>
+                            <span>8:30 AM - 5:30 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-green-600 pb-2">
+                            <span>
+                                <span class="lang-en">Saturday - Sunday</span>
+                                <span class="lang-ms hidden">Sabtu - Ahad</span>
+                            </span>
+                            <span>8:00 AM - 6:00 PM</span>
+                        </li>
+                        <li class="flex justify-between border-b border-green-600 pb-2">
+                            <span>
+                                <span class="lang-en">Public Holidays</span>
+                                <span class="lang-ms hidden">Cuti Umum</span>
+                            </span>
+                            <span>8:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                    
+                    <h3 class="text-xl font-bold mt-8 mb-4">
+                        <span class="lang-en">Free Admission</span>
+                        <span class="lang-ms hidden">Masuk Percuma</span>
+                    </h3>
+                    <p class="mb-6">
+                        <span class="lang-en">Enjoy free entry to all areas of the Botanical Garden Labuan. Donations to support our conservation work are welcome.</span>
+                        <span class="lang-ms hidden">Nikmati kemasukan percuma ke semua kawasan Taman Botani Labuan. Derma untuk menyokong kerja pemuliharaan kami dialu-alukan.</span>
+                    </p>
+                    
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="lang-en">Getting Here</span>
+                        <span class="lang-ms hidden">Cara Mendapatkan Ke Sini</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-bus mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">By Bus</span>
+                                    <span class="lang-ms hidden">Dengan Bas</span>
+                                </p>
+                                <p>
+                                    <span class="lang-en">Take Labuan Town Bus No. 1 or No. 3 to Botanical Garden stop</span>
+                                    <span class="lang-ms hidden">Naik Bas Bandar Labuan No. 1 atau No. 3 ke hentian Taman Botani</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-car mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">By Car</span>
+                                    <span class="lang-ms hidden">Dengan Kereta</span>
+                                </p>
+                                <p>
+                                    <span class="lang-en">Free parking available on site (500 spaces)</span>
+                                    <span class="lang-ms hidden">Tempat letak kereta percuma disediakan di tapak (500 ruang)</span>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-taxi mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">By Taxi</span>
+                                    <span class="lang-ms hidden">Dengan Teksi</span>
+                                </p>
+                                <p>
+                                    <span class="lang-en">Approx. RM15 from Labuan town center</span>
+                                    <span class="lang-ms hidden">Kira-kira RM15 dari pusat bandar Labuan</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-xl font-bold mb-4">
+                        <span class="lang-en">Contact Us</span>
+                        <span class="lang-ms hidden">Hubungi Kami</span>
+                    </h3>
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">Location</span>
+                                    <span class="lang-ms hidden">Lokasi</span>
+                                </p>
+                                <p>Jalan Tanjung Batu, 87000 Labuan FT, Malaysia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">Phone</span>
+                                    <span class="lang-ms hidden">Telefon</span>
+                                </p>
+                                <p>+60 87-412 355</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-4 text-yellow-300"></i>
+                            <div>
+                                <p class="font-semibold">
+                                    <span class="lang-en">Email</span>
+                                    <span class="lang-ms hidden">Emel</span>
+                                </p>
+                                <p>info@bglabuan.gov.my</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <form class="mt-8 space-y-4">
+                        <div>
+                            <input type="text" placeholder="Your Name" class="w-full px-4 py-3 rounded bg-green-800 text-white placeholder-green-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                        </div>
+                        <div>
+                            <input type="email" placeholder="Your Email" class="w-full px-4 py-3 rounded bg-green-800 text-white placeholder-green-300 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                        </div>
+                        <div>
+                            <select class="w-full px-4 py-3 rounded bg-green-800 text-white focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                                <option value="">Select Inquiry Type</option>
+                                <option value="general">General Information</option>
+                                <option value="education">Educational Programs</option>
+                                <option value="events">Event Booking</option>
+                                <option value="accessibility">Accessibility Questions</option>
+                                <option value="volunteer">Volunteer Opportunities</option>
+                            </select>
+                        </div>
+                        <div>
+                            <textarea placeholder="Your Message" rows="4" class="w-full px-4 py-3 rounded bg-green-800 text-white placeholder-green-300 focus:outline-none focus:ring-2 focus:ring-yellow-300"></textarea>
+                        </div>
+                        <button type="submit" class="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-3 px-6 rounded-full w-full transition">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Map Section -->
+    <section class="py-0 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="map-container rounded-xl shadow-xl overflow-hidden">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3979.7591607298386!2d115.21584771528666!3d5.25036539617627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3237cd0c13a1a4a9%3A0x1e5f5d5b6f3b7d0e!2sLabuan%20Botanical%20Garden!5e0!3m2!1sen!2smy!4v1627479598359!5m2!1sen!2smy" 
+                    width="100%" 
+                    height="100%" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div class="mb-8 md:mb-0">
+                    <a href="#" class="text-2xl font-bold">
+                        <i class="fas fa-leaf mr-2"></i>
+                        <span class="lang-en">Botanical Garden Labuan</span>
+                        <span class="lang-ms hidden">Taman Botani Labuan</span>
+                    </a>
+                    <p class="mt-2 text-green-300 max-w-md">
+                        <span class="lang-en">A sanctuary of tropical biodiversity and conservation in the heart of Labuan.</span>
+                        <span class="lang-ms hidden">Sebuah tempat perlindungan biodiversiti tropika dan pemuliharaan di tengah-tengah Labuan.</span>
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">
+                            <span class="lang-en">Quick Links</span>
+                            <span class="lang-ms hidden">Pautan Pantas</span>
+                        </h4>
+                        <ul class="space-y-2">
+                            <li><a href="#home" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Home</span>
+                                <span class="lang-ms hidden">Utama</span>
+                            </a></li>
+                            <li><a href="#about" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">About</span>
+                                <span class="lang-ms hidden">Tentang</span>
+                            </a></li>
+                            <li><a href="#attractions" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Attractions</span>
+                                <span class="lang-ms hidden">Tarikan</span>
+                            </a></li>
+                            <li><a href="#events" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Events</span>
+                                <span class="lang-ms hidden">Acara</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">
+                            <span class="lang-en">Information</span>
+                            <span class="lang-ms hidden">Maklumat</span>
+                        </h4>
+                        <ul class="space-y-2">
+                            <li><a href="#contact" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Plan Your Visit</span>
+                                <span class="lang-ms hidden">Rancang Lawatan Anda</span>
+                            </a></li>
+                            <li><a href="#" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Accessibility</span>
+                                <span class="lang-ms hidden">Aksesibiliti</span>
+                            </a></li>
+                            <li><a href="#" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Educational Programs</span>
+                                <span class="lang-ms hidden">Program Pendidikan</span>
+                            </a></li>
+                            <li><a href="#" class="text-green-300 hover:text-white transition">
+                                <span class="lang-en">Privacy Policy</span>
+                                <span class="lang-ms hidden">Dasar Privasi</span>
+                            </a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">
+                            <span class="lang-en">Connect With Us</span>
+                            <span class="lang-ms hidden">Berhubung Dengan Kami</span>
+                        </h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-green-300 hover:text-white text-2xl transition"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="text-green-300 hover:text-white text-2xl transition"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="text-green-300 hover:text-white text-2xl transition"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="text-green-300 hover:text-white text-2xl transition"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-green-800 mt-12 pt-8 text-center text-green-400">
+                <p>
+                    <span class="lang-en">&copy; 2023 Botanical Garden Labuan. All Rights Reserved.</span>
+                    <span class="lang-ms hidden">&copy; 2023 Taman Botani Labuan. Hak Cipta Terpelihara.</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="updated_script_block.js"></script>
+</body>
+</html>

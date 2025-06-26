@@ -1,0 +1,223 @@
+:root {
+            --primary-green: #2e7d32;
+            --secondary-green: #81c784;
+            --accent-yellow: #f9a825;
+            --dark-brown: #4e342e;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+        }
+
+.hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), 
+                        url('photo/main_entrance/IMG_5599.JPG');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            min-height: 500px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .section-divider {
+            width: 150px;
+            height: 3px;
+            background: var(--accent-yellow);
+            margin: 20px auto;
+            border-radius: 10px;
+        }
+
+        .attraction-card {
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .attraction-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            height: 250px;
+        }
+
+        .gallery-item img {
+            transition: transform 0.5s ease;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: -100%;
+            left: 0;
+            width: 100%;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 20px;
+            transition: bottom 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            bottom: 0;
+        }
+
+.navbar {
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+.navbar.scrolled {
+    background-color: rgba(46, 125, 50, 0.95);
+    padding: 10px 0;
+}
+
+#language-select,
+#language-select-mobile {
+    background-color: transparent !important;
+    border: none;
+    transition: background-color 0.3s ease;
+    color: white;
+}
+
+#language-select.scrolled,
+#language-select-mobile.scrolled {
+    background-color: #2e7d32 !important; /* primary green */
+    border-radius: 0.375rem; /* rounded-md */
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    color: white;
+}
+
+        .map-container {
+            height: 400px;
+        }
+
+        .leaf-animation {
+            position: absolute;
+            opacity: 0;
+            animation: falling 10s linear infinite;
+        }
+
+        .calendar-day {
+            transition: all 0.3s ease;
+        }
+
+        .calendar-day:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .calendar-day.has-event {
+            background-color: #e8f5e9;
+        }
+
+        .plant-card {
+            transition: all 0.3s ease;
+        }
+
+        .plant-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-card {
+            transition: all 0.3s ease;
+        }
+
+        .review-card:hover {
+            transform: scale(1.02);
+        }
+
+        @keyframes falling {
+            0% {
+                top: -10%;
+                transform: translateX(0) rotate(0deg);
+                opacity: 1;
+            }
+            100% {
+                top: 110%;
+                transform: translateX(100px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                height: 80vh;
+            }
+            
+            .navbar-menu {
+                position: fixed;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                background-color: var(--primary-green);
+                transition: left 0.3s;
+                z-index: 1000;
+                padding-top: 80px;
+            }
+            
+            .navbar-menu.active {
+                left: 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+        }
+
+
+/* =======  Navigation Side‑Menu Fix  ======= */
+/* Limit mobile side‑menu width so it doesn't cover the whole page */
+@media (max-width: 767px) {
+    .navbar-menu {
+        width: 260px;          /* fixed drawer width */
+        left: -260px;          /* keep it hidden by default */
+        background-color: var(--primary-green);
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 80px;
+        transition: left 0.3s;
+    }
+    .navbar-menu.active {
+        left: 0;               /* slide in when active */
+    }
+}
+
+/* On medium screens and above, show menu inline & reset styles */
+@media (min-width: 768px) {
+    .navbar-menu {
+        position: static;
+        width: auto;
+        height: auto;
+        background: transparent;
+        padding-top: 0;
+        left: 0;
+        transition: none;
+    }
+}
+
+
+/* =======  Remove Side‑Menu & Make Top Navbar Semi-Transparent  ======= */
+.navbar {
+    background: rgba(19, 97, 54, 0.85);   /* semi‑transparent dark green */
+    backdrop-filter: blur(4px);           /* subtle glass effect */
+}
+
+/* Hide hamburger icon and side drawer completely */
+.hamburger,
+.navbar-menu {
+    display: none !important;
+}
+
